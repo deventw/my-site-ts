@@ -10,14 +10,14 @@ const Days = () => {
         <div className="text-md rounded-xl p-8 text-center font-light leading-normal  flex-col">
           <ul className="list-disc">
             <li>
-              init:
+              const init =
               {(
                 (Date.now() - new Date('2020-09-29').getTime()) /
                 (1000 * 3600 * 24)
               ).toFixed()}
             </li>
             <li>
-              &#127314;:
+              const &#127314; =
               {(
                 (Date.now() - new Date('2020-11-07').getTime()) /
                 (1000 * 3600 * 24)
