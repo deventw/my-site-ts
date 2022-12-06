@@ -19,9 +19,9 @@ export const Main = () => {
       <p>
         <a href="https://github.com/deventw" target="_blank" rel="noreferrer">
           Here
-        </a>
+        </a>{' '}
         are some projects I have made.
       </p>
     </div>
-  )
-}
+  );
+};
