@@ -1,12 +1,13 @@
-import { Toaster } from 'react-hot-toast'
-import { Link, Route, Routes } from 'react-router-dom'
-import Snowfall from 'react-snowfall'
-import './App.css'
-import { About } from './pages/About'
-import Days from './pages/Days'
-import Home from './pages/Home'
-import NoPage from './pages/NoPage'
-import { Notepad } from './pages/Notepad'
+import { Toaster } from 'react-hot-toast';
+import { Link, Route, Routes } from 'react-router-dom';
+import Snowfall from 'react-snowfall';
+import './App.css';
+import { About } from './pages/About';
+import Days from './pages/Days';
+import Home from './pages/Home';
+import MarkSix from './pages/MarkSix';
+import NoPage from './pages/NoPage';
+import { Notepad } from './pages/Notepad';
 
 function App() {
   return (
@@ -34,10 +35,11 @@ function App() {
         <Route path="notepad" element={<Notepad />} />
         <Route path="about" element={<About />} />
         <Route path="days" element={<Days />} />
+        <Route path="mark6" element={<MarkSix />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
