@@ -40,8 +40,8 @@ const MarkSix = () => {
     do {
       arr = arr.filter((item) => item !== randomIn(49));
     } while (arr.length > 1);
-
-    return arr;
+    console.log(arr);
+    return arr[0];
   };
 
   const filterMethod2 = () => {
@@ -49,10 +49,10 @@ const MarkSix = () => {
 
     do {
       const num = filterOneNum();
-      if (numberSet.includes(...num)) {
+      if (numberSet.includes(num)) {
         continue;
       } else {
-        numberSet.push(...num);
+        numberSet.push(num);
       }
     } while (numberSet.length < 6);
 
