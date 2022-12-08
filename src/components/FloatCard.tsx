@@ -15,7 +15,7 @@ const FloatCard = () => {
   const calcY = (x: number, lx: number) => (x - lx - window.innerWidth / 2) / 20;
 
 
-  const img = 'https://cdn.sspai.com/article/59abd232-2ebf-296a-c32a-20a82edf3b51.jpg?imageMogr2/auto-orient/quality/95/thumbnail/!1420x708r/gravity/Center/crop/1420x708/interlace/1';
+  // const img = 'https://cdn.sspai.com/article/59abd232-2ebf-296a-c32a-20a82edf3b51.jpg?imageMogr2/auto-orient/quality/95/thumbnail/!1420x708r/gravity/Center/crop/1420x708/interlace/1';
 
   useEffect(() => {
     const preventDefault = (e: Event) => e.preventDefault();
