@@ -1,10 +1,11 @@
 import oldMan from '../assets/oldman.gif';
+import FloatCard from '../components/FloatCard';
 
-const Days = () => {
+const Day = () => {
   return (
     <div className="App">
       <div className="flex-row w-80 md:w-max border-4 border-rose-300 rounded-3xl p-8 drop-shadow-2xl font-light  justify-center items-center text-xl">
-        <h1 className="text-2xl font-bold justify-center">Days</h1>
+        <h1 className="text-3xl font-bold justify-center">D A Y</h1>
         <hr />
 
         <div className="text-md rounded-xl p-8 text-center font-light leading-normal  flex-col">
@@ -30,6 +31,8 @@ const Days = () => {
             src={oldMan}
             alt={'old man'}
           />
+          <FloatCard  />
+
         </div>
       </div>
       <div className="flex justify-center align-center">
@@ -49,4 +52,4 @@ const Days = () => {
   );
 };
 
-export default Days;
+export default Day;

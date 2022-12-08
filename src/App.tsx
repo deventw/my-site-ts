@@ -3,7 +3,7 @@ import { Link, Route, Routes } from 'react-router-dom';
 import Snowfall from 'react-snowfall';
 import './App.css';
 import { About } from './pages/About';
-import Days from './pages/Days';
+import Day from './pages/Day';
 import Home from './pages/Home';
 import MarkSix from './pages/MarkSix';
 import NoPage from './pages/NoPage';
@@ -34,7 +34,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="notepad" element={<Notepad />} />
         <Route path="about" element={<About />} />
-        <Route path="days" element={<Days />} />
+        <Route path="day" element={<Day />} />
         <Route path="mark6" element={<MarkSix />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
