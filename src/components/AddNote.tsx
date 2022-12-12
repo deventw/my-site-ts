@@ -9,7 +9,7 @@ const AddNote = (props: Props) => {
 
   const [noteText, setNoteText] = useState('');
   const charLimit = 5000;
-  const onChange = (event: ChangeEvent<HTMLInputElement>) => {
+  const onChange = (event: ChangeEvent<HTMLTextAreaElement>) => {
     if (noteText.length < charLimit) {
       setNoteText(event.target.value);
     }
