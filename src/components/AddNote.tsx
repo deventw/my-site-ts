@@ -1,27 +1,27 @@
-import { ChangeEvent, useState } from 'react'
+import { ChangeEvent, useState } from 'react';
 
 interface Props {
   addNote: (text: string) => void;
 }
 
 const AddNote = (props: Props) => {
-  const { addNote } = props
+  const { addNote } = props;
 
-  const [noteText, setNoteText] = useState('')
-  const charLimit = 5000
+  const [noteText, setNoteText] = useState('');
+  const charLimit = 5000;
   const onChange = (event: ChangeEvent<HTMLInputElement>) => {
     if (noteText.length < charLimit) {
-      setNoteText(event.target.value)
+      setNoteText(event.target.value);
     }
-  }
+  };
   const onSave = () => {
     if (noteText.trim().length > 0) {
-      addNote(noteText)
-      setNoteText('')
+      addNote(noteText);
+      setNoteText('');
     } else {
-      alert('Nothing to save. ૮ ˶ᵔ ᵕ ᵔ˶ ა \n\n(づ˶•༝•˶) づ♡')
+      alert('Nothing to save. ૮ ˶ᵔ ᵕ ᵔ˶ ა \n\n(づ˶•༝•˶) づ♡');
     }
-  }
+  };
 
   return (
     <div className="w-80 md:w-96 p-2">
@@ -38,7 +38,7 @@ const AddNote = (props: Props) => {
         className="block p-4 w-full shadow-sm text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:border-4  focus:outline-none focus:ring-pink-500 focus:border-pink-500 placeholder:italic "
         placeholder="Type your notes..."
         value={noteText}
-        onChange={() => onChange}
+        onChange={(e)=>onChange(e)}
       ></textarea>
       <div className="note-footer flex flex-row justify-between p-2">
         <small>{noteText.length}</small>
@@ -80,7 +80,7 @@ const AddNote = (props: Props) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AddNote
+export default AddNote;
