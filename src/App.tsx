@@ -15,7 +15,7 @@ function App() {
       <div>
         <Toaster />
       </div>
-      <Snowfall snowflakeCount={100} />
+      <Snowfall snowflakeCount={100} style={{transform: `rotate(${180}deg)`}}/>
       <nav>
         <ul className="flex-row flex gap-4 m-8 justify-center">
           <li>
