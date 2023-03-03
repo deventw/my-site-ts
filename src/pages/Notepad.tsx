@@ -4,6 +4,7 @@ import { toast } from 'react-hot-toast';
 import ConeImage from '../assets/cone.png';
 import AddNote from '../components/AddNote';
 import { Note } from '../components/Note';
+import LoadingDot from '../assets/loading_24.gif';
 
 export interface NoteProps {
   id: string;
@@ -57,6 +58,22 @@ export const Notepad = () => {
         <img src={ConeImage} width={'64'} />
         <img src={ConeImage} width={'64'} />
         <img src={ConeImage} width={'64'} />
+      </div>
+      <div className="flex justify-between  p-8">
+        <img
+          src={LoadingDot}
+          alt={'loading'}
+        />
+
+        <img
+          src={LoadingDot}
+          alt={'loading'}
+        />
+
+        <img
+          src={LoadingDot}
+          alt={'loading'}
+        />
       </div>
     </div>
   );
